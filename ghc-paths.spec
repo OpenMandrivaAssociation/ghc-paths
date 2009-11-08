@@ -1,4 +1,5 @@
 %define module ghc-paths
+%define _no_haddock 1
 
 Name: %{module}
 Version: 0.1.0.5
@@ -9,7 +10,7 @@ License: BSD3
 Url: http://hackage.haskell.org/cgi-bin/hackage-scripts/package/%{modules}
 Source: http://hackage.haskell.org/packages/archive/%{module}/%{module}-%{version}.tar.gz
 BuildRoot: %_tmppath/%name-%version-%release-root
-BuildRequires: haskell-macros
+BuildRequires: haskell-macros >= 6.4
 BuildRequires: ghc
 
 %description
@@ -37,7 +38,7 @@ rm -fr %buildroot/usr/share/doc/*
 %defattr(-,root,root)
 %_cabal_rpm_deps_dir
 %{_libdir}/%{module}-%{version}
-%doc dist/doc/html
+%_cabal_haddoc_files
 
 %clean
 rm -fr %buildroot
