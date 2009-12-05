@@ -2,8 +2,8 @@
 %define _no_haddock 1
 
 Name: %{module}
-Version: 0.1.0.5
-Release: %mkrel 3
+Version: 0.1.0.6
+Release: %mkrel 1
 Summary: Knowledge of GHC's installation directories
 Group: Development/Other
 License: BSD3
