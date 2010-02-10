@@ -3,7 +3,7 @@
 
 Name: %{module}
 Version: 0.1.0.6
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Knowledge of GHC's installation directories
 Group: Development/Other
 License: BSD3
@@ -12,6 +12,9 @@ Source: http://hackage.haskell.org/packages/archive/%{module}/%{module}-%{versio
 BuildRoot: %_tmppath/%name-%version-%release-root
 BuildRequires: haskell-macros >= 6.4
 BuildRequires: ghc
+Requires: ghc
+Requires(post): ghc
+Requires(preun): ghc
 
 %description
 Knowledge of GHC's installation directories
