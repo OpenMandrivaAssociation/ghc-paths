@@ -3,7 +3,7 @@
 
 Name: %{module}
 Version: 0.1.0.6
-Release: %mkrel 2
+Release: %mkrel 3
 Summary: Knowledge of GHC's installation directories
 Group: Development/Other
 License: BSD3
