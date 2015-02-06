@@ -4,7 +4,7 @@
 Summary:	Knowledge of GHC's installation directories
 Name:		ghc-paths
 Version:	0.1.0.8
-Release:	8
+Release:	9
 License:	BSD
 Group:		Development/Other
 Url:		http://hackage.haskell.org/package/%{name}
