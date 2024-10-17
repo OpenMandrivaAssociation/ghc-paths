@@ -7,7 +7,7 @@ Version:	0.1.0.8
 Release:	9
 License:	BSD
 Group:		Development/Other
-Url:		http://hackage.haskell.org/package/%{name}
+Url:		https://hackage.haskell.org/package/%{name}
 Source0:	http://hackage.haskell.org/packages/archive/%{name}/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	haskell-macros
 BuildRequires:	ghc-devel
